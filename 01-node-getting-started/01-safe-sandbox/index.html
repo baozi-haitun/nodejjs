@@ -1,0 +1,32 @@
+<!-- 安全沙箱:没有安全级别的限制-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div>wowowo</div>
+    <script>
+        var token = "52ed41b273758a56e46b143f78ba070d"
+        axios({
+            url: "https://www.senyuan88.cn/cargo/infoTypes",
+            method: "get",
+            headers: {
+                token
+            },
+        }).then((res) => {
+            document.body.innerHTML = res.data
+            // document.write()
+        }).catch((err) => {
+            console.log(err)
+        })
+    </script>
+</body>
+
+</html>

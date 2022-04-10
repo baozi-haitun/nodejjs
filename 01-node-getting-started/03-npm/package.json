@@ -1,0 +1,23 @@
+{
+  "name": "02-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gul": "gulp",
+    "nrm": "nrm -v",
+    "runjs": "node ./02-scripts/script1.js && ./02-scripts/script2.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./02-scripts/script1.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "jquery": "^3.6.0",
+    "nrm": "^1.2.5"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
